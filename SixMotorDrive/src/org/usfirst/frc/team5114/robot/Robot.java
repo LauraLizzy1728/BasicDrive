@@ -20,20 +20,20 @@ public class Robot extends IterativeRobot
 	
 	// Talons for left side 
 	CANTalon frontLeftMotor = new CANTalon(1); 		
-	//CANTalon middleLeftMotor = new CANTalon(5);
-	CANTalon rearLeftMotor = new CANTalon(2);
+	CANTalon middleLeftMotor = new CANTalon(2);
+	CANTalon rearLeftMotor = new CANTalon(3);
 	
 	// Talons for right side (all even)
-	CANTalon frontRightMotor = new CANTalon(3);
-	//CANTalon middleRightMotor = new CANTalon(6);
-	CANTalon rearRightMotor = new CANTalon(4);
+	CANTalon frontRightMotor = new CANTalon(4);
+	CANTalon middleRightMotor = new CANTalon(5);
+	CANTalon rearRightMotor = new CANTalon(6);
 	
 	
 
 	
 	
-	RobotDriveModified drive = new RobotDriveModified(frontLeftMotor, rearLeftMotor,
-													frontRightMotor, rearRightMotor);
+	RobotDriveModified drive = new RobotDriveModified(frontLeftMotor, middleLeftMotor, rearLeftMotor,
+													frontRightMotor, middleRightMotor, rearRightMotor);
 	
 	
 	
